@@ -1,0 +1,142 @@
+.menuWrapper {
+  position: sticky;
+  top: 55px;
+  width: 20rem;
+  min-height: min-content;
+  background: #fff;
+  border-radius: 20px;
+  border: 1px #f1f1f1 solid;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+  transform: translateY(20px);
+  z-index: 0;
+  height: 100vh;
+}
+@media only screen and (max-width: 600px) {
+  /* .submenu-navigation__item:not(:first-of-type) {
+    margin-top: 5px !important;
+  } */
+  .menuWrapper-navigation__item:not(:first-of-type) {
+   
+    padding-left: 0 !important;
+    margin-top: 5px !important;
+}
+.menuWrapper__content{
+ height: fit-content !important;
+}
+.menuWrapper {
+  height: auto;
+  width: 100% !important;
+
+}
+.scrollbar {
+  height: 20vh !important;
+  
+}
+
+}
+.scrollbar {
+  height: 80vh;
+  overflow-y: scroll;
+  margin-bottom: 25px;
+}
+
+
+#SCROLLBAR::-webkit-scrollbar {
+  width: 6px;
+}
+#SCROLLBAR::-webkit-scrollbar-track {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#SCROLLBAR::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 25px;
+}
+
+.menuWrapper__content {
+  padding: 30px 20px 30px 20px;
+}
+
+.submenu__link {
+  padding: 20px 30px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  display: block;
+  position: relative;
+  display: flex;
+  line-height: 1.5;
+  justify-content: space-between;
+  transition: 0.2s;
+}
+
+.submenu-navigation {
+  list-style-type: none;
+}
+.submenu-navigation__item:not(:first-of-type) {
+  margin-top: 5px;
+}
+.submenu-navigation__link {
+  text-decoration: none;
+  display: block;
+  padding: 15px 0 15px 0;
+  position: relative;
+  text-align: center;
+}
+.submenu-navigation__link:hover {
+  background: #f2f2f2;
+  border-radius: 10px;
+}
+
+.submenu-navigation__title {
+  display: block;
+}
+.submenu-navigation__title {
+  font-weight: 700;
+  color: #333;
+  font-size: 1.15rem;
+}
+
+.menuSearch-box {
+  background-color: #f2f2f2;
+  height: 45px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: flex-end;
+  position: sticky;
+  
+}
+.menuSearch-box:hover > .menuSearch-btn {
+  color: #f2f2f2 !important;
+}
+.menuSearch-box a {
+  text-decoration: none;
+}
+
+.menuSearch-btn  {
+  color: #e84118 !important;
+  float: right;
+  width: 40px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuSearch-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  font-size: 16px;
+  line-height: 40px;
+  padding: 0;
+  color: #222;
+}
+
