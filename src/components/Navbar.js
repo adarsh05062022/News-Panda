@@ -175,7 +175,7 @@ const NavBar = () => {
                 </li>
               </div>
 
-              <div className="navigation ">
+              {/* <div className="navigation ">
                 <li className="navigation__item navigation__item--has-submenu">
                   <Link to="#" className="navigation__link">
                     FEATURE
@@ -249,9 +249,9 @@ const NavBar = () => {
                     </div>
                   </div>
                 </li>
-              </div>
+              </div> */}
               <li className="nav-item">
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" to="#">
                   ABOUT US
                 </Link>
               </li>
