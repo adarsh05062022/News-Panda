@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Navbar from "./components/Navbar";
 import News from "./components/News";
 import Category from "./components/Category";
@@ -17,7 +17,32 @@ const App = (props) => {
   const changeTopic = (topicName) => {
     settopicGet(topicName);
   };
+  useEffect(() => {
+    const fetchInitialNews = async () => {
+      setProgress(0);
+      setProgress(30);
+      try {
+        const response = await fetch("http://localhost:4000/fetch-news");
+        const contentType = response.headers.get("content-type");
+        
+        let data;
+        if (contentType && contentType.includes("application/json")) {
+          data = await response.json();
+        } else {
+          data = await response.text();
+        }
+        
+        alert(data); // This will show either the JSON or text response
+        setProgress(100);
+      } catch (error) {
+        console.error("Error fetching initial news:", error);
+        setProgress(100);
+      }
+    };
+    
 
+    fetchInitialNews();
+  }, []);
   return (
     <div>
       <Router>

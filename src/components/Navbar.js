@@ -41,7 +41,7 @@ const NavBar = () => {
                   Home
                 </Link>
               </li>
-              <div className="navigation">
+              {/* <div className="navigation">
                 <li className="navigation__item navigation__item--has-submenu">
                   <Link to="/" className="navigation__link">
                     CATEGORY
@@ -173,83 +173,9 @@ const NavBar = () => {
                     </div>
                   </div>
                 </li>
-              </div>
-
-              {/* <div className="navigation ">
-                <li className="navigation__item navigation__item--has-submenu">
-                  <Link to="#" className="navigation__link">
-                    FEATURE
-                  </Link>
-                  <div className="submenu featureSubmenu">
-                    <div
-                      className="submenu__content "
-                      style={{ height: "25rem" }}
-                    >
-                      <div className="submenu__box">
-                        <img
-                          className="submenu__image"
-                          src="https://images.unsplash.com/photo-1661423063753-ea9121c6abb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3840&q=80"
-                          alt=""
-                        />
-                        <ul className="submenu-navigation">
-                          <li
-                            className="submenu-navigation__item"
-                            style={{ paddingTop: "10px" }}
-                          >
-                            <Link
-                              to="/everything"
-                              className="submenu-navigation__link"
-                            >
-                              <span
-                                className="submenu-navigation__icon"
-                                data-feather="aperture"
-                              ></span>
-                              <span className="submenu-navigation__title">
-                                Everything
-                              </span>
-                              <span className="submenu-navigation__subtitle">
-                                Enjoy our News
-                              </span>
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="submenu__box">
-                        <img
-                          className="submenu__image"
-                          src="https://images.unsplash.com/photo-1661423063753-ea9121c6abb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3840&q=80"
-                          alt=""
-                          style={{
-                            marginLeft: "17px",
-                          }}
-                        />
-                        <ul className="submenu-navigation">
-                          <li
-                            className="submenu-navigation__item"
-                            style={{ paddingLeft: "20px", paddingTop: "10px" }}
-                          >
-                            <Link
-                              to="topheadlines"
-                              className="submenu-navigation__link"
-                            >
-                              <span
-                                className="submenu-navigation__icon"
-                                data-feather="hexagon"
-                              ></span>
-                              <span className="submenu-navigation__title">
-                                Top headlines
-                              </span>
-                              <span className="submenu-navigation__subtitle">
-                                Enjoy our News
-                              </span>
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </li>
               </div> */}
+
+              
               <li className="nav-item">
                 <Link className="nav-link" to="#">
                   ABOUT US
