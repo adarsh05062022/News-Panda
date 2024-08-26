@@ -10,7 +10,7 @@ const News = (props) => {
   const [page, setPage] = useState(1);
   const [totalResults, setTotalResults] = useState(0);
 
-  const url = "http://localhost:4000/news"
+  const url = "https://news-panda-backend.onrender.com/news"
 
   const updateNews = async () => {
     props.setProgress(0);
@@ -23,6 +23,7 @@ const News = (props) => {
       let parsedData = await data.json();
 
       setArticles(parsedData);
+      console.log(parsedData)
       setTotalResults(parsedData.length); // Assuming the API returns the total number of results
       setLoading(false);
       props.setProgress(100);

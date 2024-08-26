@@ -22,7 +22,9 @@ const App = (props) => {
       setProgress(0);
       setProgress(30);
       try {
-        const response = await fetch("http://localhost:4000/fetch-news");
+
+        const url = "https://news-panda-backend.onrender.com/"
+        const response = await fetch(`${url}fetch-news`);
         const contentType = response.headers.get("content-type");
         
         let data;
@@ -32,7 +34,6 @@ const App = (props) => {
           data = await response.text();
         }
         
-        alert(data); // This will show either the JSON or text response
         setProgress(100);
       } catch (error) {
         console.error("Error fetching initial news:", error);
