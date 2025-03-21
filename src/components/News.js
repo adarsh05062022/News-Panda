@@ -10,12 +10,11 @@ const News = (props) => {
   const [page, setPage] = useState(1);
   const [totalResults, setTotalResults] = useState(0);
 
-  const url = "https://news-panda-backend.onrender.com/news"
+  const url = process.env.REACT_APP_API_URL + "news"
 
   const updateNews = async () => {
     props.setProgress(0);
-
-    // const url = `https://news-panda-3o7pyob75-adarsh05062022s-projects.vercel.app/news`;
+    
     setLoading(true);
     props.setProgress(60);
     try {
@@ -42,6 +41,10 @@ const News = (props) => {
     const newUrl = `${url}?page=${page}`;
     setLoading(true);
     try {
+
+      
+
+
       let data = await fetch(newUrl);
       let parsedData = await data.json();
 

@@ -6,6 +6,7 @@ import Category from "./components/Category";
 import LoadingBar from "react-top-loading-bar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+
 const App = (props) => {
   const [topicGet, settopicGet] = useState("everything");
   const [progress, setprogress] = useState(10);
@@ -23,7 +24,8 @@ const App = (props) => {
       setProgress(30);
       try {
 
-        const url = "https://news-panda-backend.onrender.com/"
+
+        const url = process.env.REACT_APP_API_URL
         const response = await fetch(`${url}fetch-news`);
         const contentType = response.headers.get("content-type");
         
@@ -47,7 +49,7 @@ const App = (props) => {
   return (
     <div>
       <Router>
-        <Navbar />
+        <Navbar /> 
 
         <LoadingBar color="#f11946" progress={progress} />
 
